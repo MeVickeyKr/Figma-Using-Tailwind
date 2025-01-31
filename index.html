@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Using Tailwind</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <div class="bg-red-500 w-dvw h-dvh flex" id="mainDiv">
+    <div class="bg-white w-1/5 h-full flex flex-col p-7 gap-y-6
+    " id="sideBar">
+        <div id="neptune">
+            <img src="./assests/Union.png" alt="">
+        </div>
+        <div class="border border-blue-100 flex p-2 rounded-md  items-center gap-2 " >
+            <img src="./assests/Group 79 (1).png" alt="">
+            <div class="flex flex-col items-start grow" id="jessicathomson">
+                <p class="font-bold text-md font-[Spline Sans]" id="text">Jessica Thompson</p>
+                <p class="font-bold text-[10px] text-[#626D82]"id="user">Primary User</p>
+              </div>
+           <div class="justify-self-end">
+            <img class="h-[20px] w-[20px]"src="./assests/Icon Right.png" alt="">
+          </div>
+        </div>
+        
+        <div class="flex flex-col gap-5 grow align-middle p-3 "   id="menu">
+            <div class="flex gap-x-3 items-center p-2.5 "id="home" >
+              <img src="./assests/home 1.png" alt="Home" />
+              <span>Home</span>
+            </div>
+            <div class="flex gap-x-3  p-2.5 items-center bg-[#D3F7B5]   rounded-md"id="filetext" >
+              <img src="./assests/file-text 1.png" alt="fileText" />
+              <span>Documents</span>
+            </div>
+            <div class="flex gap-x-3 items-center p-2.5 " id="chat" >
+              <img src="./assests/Vector (1).png" alt="chat" />
+              <span>Chat with Neptune</span>
+            </div>
+            <div class="flex gap-x-3 items-center p-2.5 " id="help" >
+              <img src="./assests/help-circle 1 (1).png" alt="" />
+              <span>Help</span>
+            </div>
+            <div class="flex gap-x-3 items-center p-2.5 " id="setting">
+              <img src="./assests/settings 1 (1).png" alt="setting img" />
+              <span>Settings</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-4" id="lowerbox">
+            <div class=""id="call">
+              <img src="./assests/phone 1 (1).png" alt="" />
+            </div>
+            <div  class=""  id="havingtrouble">
+              <h2>Having trouble?</h2>
+              <p id="trouble content">
+                Feel free to contact us and we will always help you through the
+                process
+              </p>
+            </div>
+            <div>
+                <button class="bg-[#1F4451] border rounded-md  text-white p-2" id="contactus">Contact us</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col grow bg-[#EBEBEB] pt-8 pl-16 pr-16 gap-10"id="mainContent">
+            <nav class="">
+                <ul class="flex">
+                  <li style="color: #436d7c">Home</li>
+                  <li><img src="./assests/chevron-right.png" alt="" /></li>
+                  <li style="color: #b5bdcd">Documents</li>
+                </ul>
+            </nav>
+                <div class=" flex justify-between items-center relative " >
+                  <p class=" text-[33px] text-[#2A2A2] font-bold">My Documents</p>
+                  <div class="flex justify-between items-center border-[#B5BDCD]">
+                    <input class="border rounded-sm  w-[290px] p-2.5 bg-white text-[#b5bdcd]"
+                      type="text"
+                      placeholder="Search Document"
+                    />
+                    <img class="
+                    absolute right-3 top-4"src="./assests/Vector.svg"  />
+                  </div>
+                </div>
+
+        <div class="border border-[#B5BDCD] rounded-md overflow-hidden"> 
+           
+              <table class="table-auto w-full bg-white ">
+                <thead>
+                  <tr class="h-10 border-b-2 border-[#E8ECF1]">
+                    <th class="py-4">
+                      <div class="flex items-center justify-end gap-2">
+                        <input type="checkbox" />
+                        <img id="table-arrow-icon" src="./assests/Icon Right.png" alt="" />
+                      </div>
+                    </th>
+                    <th class="text-start py-4 px-4 text-[#2A2A2A]">Document Name</th>
+                    <th class="text-start py-4 px-4 text-[#2A2A2A]">Status</th>
+                    <th class="text-start py-4 px-4 text-[#2A2A2A]">Last Modified</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class= "h-10 border-b-2 border-[#E8ECF1]">
+                    <td class="text-center py-5"><input type="checkbox" /></td>
+                    <td class="text-[#436D7C] font-bold px-4 py-5">Title of Document Goes Here</td>
+                    <td  class="px-4 py-5"><div class="rounded-4xl bg-[#436D7C] text-white px-4 py-1 inline" id="singing">Needs Signing</div></td>
+                    <td class="px-4 py-5">
+                      <div class="flex flex-col text-[#626D82]">
+                        10/22/2024 <span class="time">2:01pm</span>
+                      </div>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex justify-around items-center ">
+                        <button class="border-1 border-[#B5BDCD] w-[200px] p-2 rounded-md text-[#626D82]">Sign Now</button>
+                        <span class="dot-menu-container">
+                          <img
+                            class="dot-img"
+                            id="first-Button"
+                            src="./assests/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-10 border-b-2 border-[#E8ECF1]">
+                    <td class="text-center py-5">
+                      <input type="checkbox" />
+                    </td>
+                    <td class="text-[#436D7C] font-bold px-4 py-5">Title of Document Goes Here</td>
+                    <td class="px-4 py-5">
+                      <div class="bg-[#E8ECF1] w-fit h-fit rounded-4xl px-4 py-0.2 text-[#626D82]" id="pending">Pending</div>
+                      <span class ="text-[#B5BDCD] italic" id="waiting"
+                        >Waiting for<span class="text-[#436D7C]" id="waiting-highlighted">
+                          1 person</span
+                        ></span
+                      >
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex flex-col text-[#626D82]">
+                        10/22/2024 <span class="time">2:01pm</span>
+                      </div>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex justify-around items-center">
+                        <button class="border-1 border-[#B5BDCD] w-[200px] p-2 rounded-md text-[#626D82]">Preview</button>
+                        <span
+                          ><img
+                            class="dot-img"
+                            id="second-Button"
+                            src="./assests/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.png"
+                            alt=""
+                        /></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-10 border-b-2 border-[#E8ECF1]">
+                    <td class="text-center py-5">
+                      <input type="checkbox" />
+                    </td>
+                    <td class="text-[#436D7C] font-bold px-4 py-5">Title of Document Goes Here</td>
+                    <td class="px-4 py-5"> 
+                      <div  class="bg-[#E8ECF1] w-fit h-fit rounded-4xl px-4 py-0.2 text-[#626D82]" id="pending">Pending</div>
+                      <span class ="text-[#B5BDCD] italic" id="waiting"
+                      >Waiting for<span class="text-[#436D7C]" id="waiting-highlighted">
+                        2 people</span
+                      ></span>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex flex-col text-[#626D82]">
+                        10/22/2024 <span class="time">2:01pm</span>
+                      </div>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex justify-around items-center">
+                        <button class="border-1 border-[#B5BDCD] w-[200px] p-2 rounded-md text-[#626D82]">Preview</button>
+                        <span
+                          ><img
+                            class="dot-img"
+                            id="Third-Button"
+                            src="./assests/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.png"
+                            alt=""
+                        /></span>
+                       
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-10 border-b-2 border-[#E8ECF1]">
+                    <td class="text-center py-5"><input type="checkbox" /></td>
+                    <td class="text-[#436D7C] font-bold px-4 py-5">Title of Document Goes Here</td>
+                    <td class="px-4 py-5">
+                      <div class="bg-[#D3F7B5]  w-fit h-fit rounded-4xl px-4 py-0.3 text-[#1F4451]">Completed</div>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex flex-col text-[#626D82]">
+                        10/22/2024 <span class="time">2:01pm</span>
+                      </div>
+                    </td>
+                    <td class="px-4 py-5"> 
+                      <div class="flex justify-around items-center">
+                        <button class="border-1 border-[#B5BDCD] w-[200px] p-2 rounded-md text-[#626D82]">Download PDF</button>
+                        <span
+                          ><img
+                            class="dot-img"
+                            id="fourth-Button"
+                            src="./assests/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.png"
+                            alt=""
+                        /></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-10 border-b-2 border-[#E8ECF1]">
+                    <td class="text-center py-5"><input type="checkbox" /></td>
+                    <td class="text-[#436D7C] font-bold px-4 py-5">Title of Document Goes Here</td>
+                    <td class="px-4 py-5"><div class="bg-[#D3F7B5]  w-fit h-fit rounded-4xl px-4 py-0.3 text-[#1F4451]">Completed</div></td>
+                    <td class="px-4 py-5">
+                      <div class="flex flex-col text-[#626D82]">
+                        10/22/2024 <span class="time">2:01pm</span>
+                      </div>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex justify-around items-center">
+                        <button class="border-1 border-[#B5BDCD] w-[200px] p-2 rounded-md text-[#626D82]">Download PDF</button>
+                        <span
+                          ><img
+                            class="dot-img"
+                            id="fifth-Button"
+                            src="./assests/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.png"
+                            alt=""
+                        /></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-10">
+                    <td class="text-center py-5"><input type="checkbox" /></td>
+                    <td class="text-[#436D7C] font-bold px-4 py-5">Title of Document Goes Here</td>
+                    <td class="px-4 py-5"><div class="bg-[#D3F7B5]  w-fit h-fit rounded-4xl px-4 py-0.3 text-[#1F4451]">Completed</div></td>
+                    <td class="px-4 py-5">
+                      <div class="flex flex-col text-[#626D82]">
+                        10/22/2024 <span class="time">2:01pm</span>
+                      </div>
+                    </td>
+                    <td class="px-4 py-5">
+                      <div class="flex justify-around items-center">
+                        <button class="border-1 border-[#B5BDCD] w-[200px] p-2 rounded-md text-[#626D82]">Download PDF</button>
+                        <span
+                          ><img
+                            class="dot-img"
+                            id="sixth-Button"
+                            src="./assests/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.png"
+                            alt=""
+                        /></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+        </div>
+    </div>
+</body>
+</html>
