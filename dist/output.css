@@ -851,9 +851,6 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
-  .w-\[20px\] {
-    width: 20px;
-  }
   .w-\[100\] {
     width: 100;
   }
@@ -865,6 +862,9 @@
   }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[20px\] {
+    width: 20px;
   }
   .w-\[250px\] {
     width: 250px;
@@ -1291,6 +1291,9 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -1923,6 +1926,14 @@
   .font-\[zin\] {
     font-family: zin;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -1936,6 +1947,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .text-balance {
     text-wrap: balance;
